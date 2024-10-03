@@ -1,7 +1,7 @@
 {
   "name": "react-mentions",
-  "version": "4.5.0",
-  "description": "React mentions input",
+  "version": "4.5.2",
+  "description": "React mentions input with onMouseMove",
   "main": "dist/react-mentions.cjs.js",
   "module": "dist/react-mentions.esm.js",
   "files": [

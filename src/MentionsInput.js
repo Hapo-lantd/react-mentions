@@ -291,7 +291,7 @@ class MentionsInput extends React.Component {
         customSuggestionsContainer={this.props.customSuggestionsContainer}
         onSelect={this.addMention}
         onMouseDown={this.handleSuggestionsMouseDown}
-        onMouseEnter={this.handleSuggestionsMouseEnter}
+        onMouseMove={this.handleSuggestionsMouseMove}
         isLoading={this.isLoading()}
         isOpened={this.isOpened()}
         ignoreAccents={this.props.ignoreAccents}
@@ -708,7 +708,7 @@ class MentionsInput extends React.Component {
     this._suggestionsMouseDown = true
   }
 
-  handleSuggestionsMouseEnter = (focusIndex) => {
+  handleSuggestionsMouseMove = (focusIndex) => {
     this.setState({
       focusIndex,
       scrollFocusedIntoView: false,
